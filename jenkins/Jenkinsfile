@@ -1,9 +1,9 @@
 pipeline{
-    //agent any
-    agent {
+    agent any
+    //agent {
         //docker { image 'ubuntu:latest'  }
-        docker { image 'node:16-alpine' }
-    }
+    //    docker { image 'node:16-alpine' }
+    //}
     stages{
         stage('build')
         {
