@@ -6,8 +6,8 @@ pipeline{
             args '-v /devops/scm/mvn-projects/.m2:/devops/scm/mvn-projects/.m2'
             }
         
-        //docker { image 'node:16-alpine' } */
-    }
+        //docker { image 'node:16-alpine' } 
+    }*/
     stages{
         stage('build')
         {
@@ -24,4 +24,5 @@ pipeline{
 
         
     }
+    
 }
