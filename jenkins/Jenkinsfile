@@ -1,7 +1,7 @@
 pipeline{
     //agent any
     agent {
-        docker { image 'maven:3.9.2-openjdk-11' }
+        docker { image 'maven:3.9.2-ibmjava' }
         //docker { image 'node:16-alpine' }
     }
     stages{
