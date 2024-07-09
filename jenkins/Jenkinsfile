@@ -2,6 +2,7 @@ pipeline{
     //agent any
     agent {
         docker { image 'maven:3.9.2-ibmjava' }
+        args '-v /devops/scm/mvn-projects/.m2:/devops/scm/mvn-projects/.m2 -v $WORKSPACE/settings.xml:/root/.m2/settings.xml'
         //docker { image 'node:16-alpine' }
     }
     stages{
